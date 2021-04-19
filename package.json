@@ -1,0 +1,16 @@
+{
+  "name": "pd-takehome",
+  "version": "1.0.0",
+  "description": "Takehome challenge for PD",
+  "main": "index.js",
+  "scripts": {
+    "test:ui": "cypress run --browser chrome",
+    "test:api": "newman run -- https://www.getpostman.com/collections/3dda381451e92a52704f",
+    "test": "npm run test:ui && npm run test:api"
+  },
+  "author": "Vinit Patel",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^7.0.1"
+  }
+}
